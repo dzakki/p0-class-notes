@@ -12,7 +12,7 @@ let students = ['Dzakki', 'Vincent', 'Rudy']
 
 2. Cara akses `Vincent` lalu tampilkan ke dalam terminal?
 3. Ubahlah `Vincent` menjadi "Vincent Guizot"?
-4. Cara menambahkan `Syukur` ke array paling akhir ?
+4. Cara menambahkan sebuah element yaitu `Syukur` ke array paling akhir ? ?
 
 ## Objectives
 
@@ -127,8 +127,6 @@ let countries = [
 ]
 ```
 
-### Accessing data countries:
-
 - tampilkan `['Japan', 'South Korea', 'Indonesia']` di dapat dari data countries ke dalam terminal.
 - tampilkan `South Korea` di dapat dari data countries ke dalam terminal.
 - tampilkan `S` dari `South Korea` di dapat dari data countries ke dalam terminal.
@@ -185,7 +183,7 @@ function findCountry(list, character) {
 console.log(findCountry(countries, 'S'))
 ```
 
-4. Tampilkan dalam bentuk array 2D Negara yang namanya diawali dengan huruf 'S' berdasarkan masing-masing kelompoknya? (Optional)
+4. Tampilkan dalam bentuk array 2D Negara yang namanya diawali dengan huruf 'S' berdasarkan masing-masing kelompoknya (Benua)? (Optional)
 
 ```bat
 [
