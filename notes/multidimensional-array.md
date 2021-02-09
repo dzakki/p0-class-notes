@@ -38,8 +38,6 @@ Misalkan kita memiliki data students hacktiv8 sebagai berikut:
 - student 2: Vincent guizot, Prime Fox, vincent@mail.com
 - student 3: Rudy harun, Queen Fox, rudy@mail.com
 
-Jika kita tampung
-
 lalu kita simpan ke dalam array menjadi, dengan urutan `[Nama, Batch, Email, ...dst]`.
 
 ```js
@@ -187,7 +185,7 @@ function findCountry(list, character) {
 console.log(findCountry(countries, 'S'))
 ```
 
-4. Tampilkan dalam bentuk array 2D Negara yang namanya diawali dengan huruf 'S' berdasarkan masing-masing kelompoknya?
+4. Tampilkan dalam bentuk array 2D Negara yang namanya diawali dengan huruf 'S' berdasarkan masing-masing kelompoknya? (Optional)
 
 ```properties
 [
@@ -223,7 +221,7 @@ function findCountry(list, character) {
 
 ```js
 /*
-    input: let countries = ['Japan', 'South Korea', 'Indonesia']`
+    input: let countries = ['Japan', 'South Korea', 'Indonesia']
     output:
    [
    	['J', 'a', 'p', 'a', 'n'],

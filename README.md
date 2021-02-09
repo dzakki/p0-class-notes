@@ -11,7 +11,7 @@
 - [ES6](#)
 - [Functions](./notes/functions.md)
 - [Array](./notes/array.md)
-- [Multidimensional Array](./multidimensional-array.md)
+- [Multidimensional Array](./notes/multidimensional-array.md)
 - [Array Review](./notes/array-review.md)
 - [Array, Multidimensional Array and Function Review](./notes/array-multidimensional-array-functions-review.md)
 - [Modular Functions](#)
