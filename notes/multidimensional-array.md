@@ -72,7 +72,7 @@ let students = [
 
 Jika kita `console.log(students)` maka di terminal akan muncul seperti ini:
 
-```properties
+```bat
 [
   [ 'Dzakki', 'Loyal Fox', 'dzakki@mail.com' ],
   [ 'Vincent', 'Prime Fox', 'vincent@mail.com' ],
@@ -82,7 +82,7 @@ Jika kita `console.log(students)` maka di terminal akan muncul seperti ini:
 
 **Array Multidimensi** bisa kita gambarkan seperti table yang memiliki index baris dan index kolom. kita bisa menggunakan `console.table(students)` untuk bantuan mengilustrasikan array multi dimensi menjadi bentuk table, sehingga di terminal akan muncul seperti ini:
 
-```properties
+```bat
 ┌─────────┬──────────────┬─────────────┬────────────────────┐
 │ (index) │      0       │      1      │         2          │
 ├─────────┼──────────────┼─────────────┼────────────────────┤
@@ -160,7 +160,7 @@ console.log(CountCountry(countries, 'S')) // 2
 
 3. Tampilkan dalam sebuah array Negara yang namanya diawali dengan huruf 'S'?
 
-```properties
+```bat
 ['South Korea', 'Spain', 'Sweden']
 ```
 
@@ -187,7 +187,7 @@ console.log(findCountry(countries, 'S'))
 
 4. Tampilkan dalam bentuk array 2D Negara yang namanya diawali dengan huruf 'S' berdasarkan masing-masing kelompoknya? (Optional)
 
-```properties
+```bat
 [
     ['South Korea'],
     [],
