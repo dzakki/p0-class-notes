@@ -101,7 +101,7 @@ Keterangan:
 - "Vincent" berada di baris ke 1 dan kolom ke 0. `students[1][0]`
 - dst.
 
-Kita juga bisa melakukan loop untuk mengakses semua value terhadap array multidimensi ini dengan cara sebagai berikut:
+Kita juga bisa melakukan loop untuk iterasi array terhadap array multidimensi ini dengan cara sebagai berikut:
 
 ```js
 for (let i = 0; i < students.length; i++) {
