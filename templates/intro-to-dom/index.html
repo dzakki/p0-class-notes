@@ -26,7 +26,10 @@
         <input type="text" id="my-input" onkeyup="getValueInput()">
         <br>
         <button onClick="changeColor()">Change color of input</button>
-        <button onclick="counter()" id="counter">0</button>
+
+        <div id="count">0</div>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
     </div>
     <script>
         
@@ -79,6 +82,7 @@
 
 
         // prompt('How are you today?')
+        // cara mendapakan value pada input ketika user click yes
         // let inputMe = prompt('How are you today?')
         // console.log(inputMe)
         
@@ -86,10 +90,24 @@
 
         // NICE TO TRY (OPTIONAL)
 
-        // CASE: Event onkeyup pada input (lihat di atas untuk tag inputnya) dan dan perlihatkan value pada input di sebuah element
+        /*
+        CASE: 
+            - Event onkeyup pada input dan dan perlihatkan value pada input di sebuah element
+            - tambahkan validasi jika perlu: tidak boleh memasukkan karakter special (#&%;)
+            - munculkan alert jika input masuk ke dalam validasi.
+        */
         function getValueInput() {
-            const input = document.getElementById("my-input").value
-            document.getElementById("value-of-input").innerHTML = input
+            
+            const input = document.getElementById("my-input")
+            const inputVal = input.value
+            const lastChar = inputVal[inputVal.length - 1]
+            if (lastChar === "#" || lastChar === "&" || lastChar === "%" || lastChar === ";") {
+                // ubah value input dengan menghapus karakter paling belakang
+                input.value = inputVal.substr(0, inputVal.length - 1)
+                alert("tidak boleh memasukkan special karakter, silahkan hapus karakternya")
+            }else {
+                document.getElementById("value-of-input").innerHTML = inputVal
+            }
         }
 
 
@@ -101,11 +119,20 @@
         }
 
 
-        // CASE: button counter
+        // CASE: button counter dan tambahin validasi tidak boleh minus.
         let count = 0
-        function counter() {
+        function plus() {
             count++
-            document.getElementById("counter").innerHTML = count
+            document.getElementById("count").innerHTML = count
+        }
+
+        function minus() {
+            if (count <= 0) {
+                alert("tidak boleh kurang dari sama dengan 0")
+            }else{
+                count--
+                document.getElementById("count").innerHTML = count
+            }
         }
     </script>
 </body>
