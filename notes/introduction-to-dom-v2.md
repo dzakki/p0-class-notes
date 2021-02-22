@@ -1,3 +1,5 @@
+[**Back to Home**](./../README.md)
+
 # DOM
 
 Document object modal (DOM) akan di muat oleh browser, ketika website kita selesai di load. semua element html kita akan menjadi object. artinya dari setiap object / element HTML kita, kita akan punya full control. kita bisa mengubah nya, menambahkan element, menghapus element bahkan kita bisa memainkan css dari masing masing element html. dan g cukup sampai disitu kita bahkan bisa dengerin event event dari user. misalkan jika user malakukan hal A maka kita akan melakukan sesuatu, jika user melakukan B maka kita melakukan sesuatu dengan menggunakan DOM ini.
@@ -92,7 +94,10 @@ jika kita ingin memanipulasi elements tersebut, maka kita harus mengakses setiap
 
 ```js
 // menambahkan content kedalam element urutan pertama yang memiliki class box-desc
-document.getElementsByClassName('box-desc')][0].innerHTML = "Javascript"
+document.getElementsByClassName('box-desc')[0].innerHTML = 'Javascript'
+
+document.getElementsByClassName('box-desc')[1].innerHTML = 'Algorithm'
+document.getElementsByClassName('box-desc')[2].innerHTML = 'HTML'
 ```
 
 ### Parent And Children Element tl;dr
@@ -137,9 +142,9 @@ event listener dengan menambahkan script `addEventListener`
 let getButton = document.getElementById('my-button')
 // mendenger peristiwa, jika element nya di klik
 getButton.addEventListener('click', function () {
-    // block kode dibawah ini akan di jalankan, jika button di klik oleh user
-    console.log('aku sudah di click, dan aku akan merubah sebuah element')
-    document.getElementsByClassName('box-desc')][2].innerHTML = "CSS"
+	// block kode dibawah ini akan di jalankan, jika button di klik oleh user
+	console.log('aku sudah di click, dan aku akan merubah sebuah element')
+	document.getElementsByClassName('box-desc')[2].innerHTML = 'CSS'
 })
 ```
 
@@ -218,5 +223,10 @@ console.log(inputMe)
 
 ### Nice to try
 
-1. event onchange ketika user masukkan sesuatu ke dalam input, lalu value input nya di tampilkan ke dalam content pada sebuah element
+1. event onkeyup ketika user masukkan sesuatu ke dalam input, lalu value input nya di tampilkan ke dalam content pada sebuah element
 2. ubah style pada sebuah element
+3. button counter
+
+## Template
+
+[Here](./../templates/intro-to-dom)

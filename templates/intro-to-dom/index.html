@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Belajar DOM bersama <em>Hacktiv8</em></h1> 
+
+    <div id="card">
+        <div id="box-title"></div>
+        <hr>
+        <div class="box-desc"></div>
+        <div class="box-desc"></div>
+        <div class="box-desc"></div>
+
+        <button id="my-button">Click me</button>
+        <!-- <button onClick="console.log('aku sudah di click')">Click me 2</button> -->
+        <button onClick="myFunction()">Click me 2</button>
+        <button onClick="showAlert()">Munculkan alert?</button>
+
+        <!-- nice to try -->
+        <hr>
+        <div id="value-of-input"></div>
+        <input type="text" id="my-input" onkeyup="getValueInput()">
+        <br>
+        <button onClick="changeColor()">Change color of input</button>
+        <button onclick="counter()" id="counter">0</button>
+    </div>
+    <script>
+        
+        // console.log(document.getElementById('box-title'))
+        document.getElementById('box-title').innerHTML = 'Phase 0'
+
+
+        // console.log(document.getElementsByClassName('box-desc'))
+        document.getElementsByClassName('box-desc')[0].innerHTML = "Javascript"
+
+        document.getElementsByClassName('box-desc')[1].innerHTML = "Algorithm"
+        document.getElementsByClassName('box-desc')[2].innerHTML = "HTML"
+
+
+        // mengetahui anak element pada element yang memiliki id card
+        // console.log(document.getElementById('card').children)
+        
+        // mengetahui bapak element pada pelement yang memiliki id box-title
+        // console.log(document.getElementById('box-title').parentNode)
+
+
+
+        
+        // ambil dulu element yang mau kita dengar.
+        let getButton = document.getElementById('my-button')
+
+        getButton.addEventListener('click', function () {
+            // block kode dibawah ini akan di jalankan, jika button di klik oleh user
+            console.log('aku sudah di click, dan aku akan merubah sebuah element')
+            document.getElementsByClassName('box-desc')[2].innerHTML = "HTML & CSS"
+        })
+
+
+        function myFunction() {
+            console.log('aku terpanggil, gara gara button click me 2 di klick')
+            // kita tetap bisa manipulasi element di dalam fungsi ini. contoh:
+            document.getElementsByClassName('box-desc')[2].innerHTML = "HTML CSS & DOM"
+        }
+
+
+
+        // alert('Hello! I am an alert box!!')
+        function showAlert() {
+            alert('Hello! I am an alert box!!')
+        }
+
+
+        // prompt('How are you today?')
+        // let inputMe = prompt('How are you today?')
+        // console.log(inputMe)
+
+
+        function getValueInput() {
+            const input = document.getElementById("my-input").value
+            document.getElementById("value-of-input").innerHTML = input
+        }
+
+
+
+        function changeColor() {
+            document.getElementById("my-input").style.color = "red"
+        }
+
+        let count = 0
+        function counter() {
+            count++
+            document.getElementById("counter").innerHTML = count
+        }
+    </script>
+</body>
+</html>
