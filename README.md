@@ -24,6 +24,7 @@
 - [CSS](./notes/css.md)
 - [HTML and CSS Review](#)
 - [Introduction to DOM](./notes/introduction-to-dom.md)
+- [Introduction to DOM V2](./notes/introduction-to-dom-v2.md)
 - [Prosedur Pengumpulan Tugas](./notes/prosedur-pengumpulan-tugas.md)
 - [Prosedur Pengumpulan Final Project](./notes/prosedur-pengumpulan-final-project.md)
 - [Live Code Rules](./notes/live-code-rules.md)
