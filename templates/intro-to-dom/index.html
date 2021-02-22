@@ -30,10 +30,11 @@
     </div>
     <script>
         
+        // CASE: getElemenentById 'box-title' dan ubah content
         // console.log(document.getElementById('box-title'))
         document.getElementById('box-title').innerHTML = 'Phase 0'
 
-
+        // CASE: getElementsByClassName 'box-desc' dan ubah content (OPTIONAL)
         // console.log(document.getElementsByClassName('box-desc'))
         document.getElementsByClassName('box-desc')[0].innerHTML = "Javascript"
 
@@ -49,7 +50,7 @@
 
 
 
-        
+        // CASE: event listener click pada buttom dan ubah content
         // ambil dulu element yang mau kita dengar.
         let getButton = document.getElementById('my-button')
 
@@ -60,6 +61,7 @@
         })
 
 
+        // CASE: event onclick pada button dan ubah content
         function myFunction() {
             console.log('aku terpanggil, gara gara button click me 2 di klick')
             // kita tetap bisa manipulasi element di dalam fungsi ini. contoh:
@@ -68,7 +70,9 @@
 
 
 
+        
         // alert('Hello! I am an alert box!!')
+        // CASE: Event onclict pada button dan show alert
         function showAlert() {
             alert('Hello! I am an alert box!!')
         }
@@ -77,19 +81,27 @@
         // prompt('How are you today?')
         // let inputMe = prompt('How are you today?')
         // console.log(inputMe)
+        
 
 
+        // NICE TO TRY (OPTIONAL)
+
+        // CASE: Event onkeyup pada input dan dan perlihatkan value pada input di sebuah element
         function getValueInput() {
             const input = document.getElementById("my-input").value
             document.getElementById("value-of-input").innerHTML = input
         }
 
 
+        // manipulasi attribute
+        // CASE: event onclik pada buttom kemudian ubah color pada sebuah element. 
 
         function changeColor() {
             document.getElementById("my-input").style.color = "red"
         }
 
+
+        // CASE: counter
         let count = 0
         function counter() {
             count++
