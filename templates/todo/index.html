@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+</head>
+<body>
+
+    <h1>Todo app</h1>
+    <hr>
+
+    <div>
+        <h2>List todo</h2>
+        <ul id="list-todo">
+
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>Add todo</h2>
+        <label>title</label>
+        <input type="text" id="input-add-title">
+        <button onclick="addTodo()">Add</button>
+    </div>
+    <hr>
+    <div>
+        <h2>Update todo</h2>
+        <label>title</label>
+        <input type="hidden" id="inputId">
+        <input type="text" id="input-update-title">
+        <button onclick="update()">update</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
